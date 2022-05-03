@@ -1,0 +1,288 @@
+{
+    "version": "V2",
+    "requestId": "f821bc9d-029b-4249-9f81-b23958e50057",
+    "timestamp": 1651581681757,
+    "images": [
+        {
+            "uid": "03e6ad4acd7a4031950ac348d9a5b740",
+            "name": "image",
+            "inferResult": "SUCCESS",
+            "message": "SUCCESS",
+            "validationResult": {
+                "result": "NO_REQUESTED"
+            },
+            "fields": [
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 133.0,
+                                "y": 104.0
+                            },
+                            {
+                                "x": 293.0,
+                                "y": 104.0
+                            },
+                            {
+                                "x": 293.0,
+                                "y": 189.0
+                            },
+                            {
+                                "x": 133.0,
+                                "y": 189.0
+                            }
+                        ]
+                    },
+                    "inferText": "돈까스",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 315.0,
+                                "y": 93.0
+                            },
+                            {
+                                "x": 422.0,
+                                "y": 93.0
+                            },
+                            {
+                                "x": 422.0,
+                                "y": 184.0
+                            },
+                            {
+                                "x": 315.0,
+                                "y": 184.0
+                            }
+                        ]
+                    },
+                    "inferText": "김밥",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 459.0,
+                                "y": 107.0
+                            },
+                            {
+                                "x": 539.0,
+                                "y": 107.0
+                            },
+                            {
+                                "x": 539.0,
+                                "y": 171.0
+                            },
+                            {
+                                "x": 459.0,
+                                "y": 171.0
+                            }
+                        ]
+                    },
+                    "inferText": "1개",
+                    "inferConfidence": 0.9999,
+                    "type": "NORMAL",
+                    "lineBreak": true
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 137.0,
+                                "y": 224.0
+                            },
+                            {
+                                "x": 248.0,
+                                "y": 224.0
+                            },
+                            {
+                                "x": 248.0,
+                                "y": 308.0
+                            },
+                            {
+                                "x": 137.0,
+                                "y": 308.0
+                            }
+                        ]
+                    },
+                    "inferText": "치즈",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 283.0,
+                                "y": 223.0
+                            },
+                            {
+                                "x": 387.0,
+                                "y": 223.0
+                            },
+                            {
+                                "x": 387.0,
+                                "y": 299.0
+                            },
+                            {
+                                "x": 283.0,
+                                "y": 299.0
+                            }
+                        ]
+                    },
+                    "inferText": "라면",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 444.0,
+                                "y": 215.0
+                            },
+                            {
+                                "x": 544.0,
+                                "y": 215.0
+                            },
+                            {
+                                "x": 544.0,
+                                "y": 285.0
+                            },
+                            {
+                                "x": 444.0,
+                                "y": 285.0
+                            }
+                        ]
+                    },
+                    "inferText": "4개",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": true
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 90.0,
+                                "y": 344.0
+                            },
+                            {
+                                "x": 245.0,
+                                "y": 344.0
+                            },
+                            {
+                                "x": 245.0,
+                                "y": 431.0
+                            },
+                            {
+                                "x": 90.0,
+                                "y": 431.0
+                            }
+                        ]
+                    },
+                    "inferText": "콰트로",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 273.0,
+                                "y": 337.0
+                            },
+                            {
+                                "x": 366.0,
+                                "y": 337.0
+                            },
+                            {
+                                "x": 366.0,
+                                "y": 409.0
+                            },
+                            {
+                                "x": 273.0,
+                                "y": 409.0
+                            }
+                        ]
+                    },
+                    "inferText": "치즈",
+                    "inferConfidence": 0.9896,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 380.0,
+                                "y": 326.0
+                            },
+                            {
+                                "x": 505.0,
+                                "y": 326.0
+                            },
+                            {
+                                "x": 505.0,
+                                "y": 417.0
+                            },
+                            {
+                                "x": 380.0,
+                                "y": 417.0
+                            }
+                        ]
+                    },
+                    "inferText": "와퍼",
+                    "inferConfidence": 0.9988,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 529.0,
+                                "y": 350.0
+                            },
+                            {
+                                "x": 637.0,
+                                "y": 327.0
+                            },
+                            {
+                                "x": 649.0,
+                                "y": 384.0
+                            },
+                            {
+                                "x": 541.0,
+                                "y": 406.0
+                            }
+                        ]
+                    },
+                    "inferText": "set",
+                    "inferConfidence": 0.8802,
+                    "type": "NORMAL",
+                    "lineBreak": true
+                }
+            ]
+        }
+    ]
+}
