@@ -7,6 +7,6 @@ API로 읽어와 파일로 저장하는 code는 python code에만 작성하였�
 
 OCR과 OCR.json 파일이 API로 읽어온 DATA를 저장한 파일입니다. 
 
-05/04 capture.py 추가 (촬영 code/S3 자동 업로드)
+ver2 05/04 capture.py 추가 (촬영 code/S3 자동 업로드)
 
-05/04 final.py 추가 (촬영 후 S3 등록 없이 local 내에서 바로 글자 인식)
+ver3 05/04 final.py 추가 (촬영 후 S3 등록 없이 local 내에서 바로 글자 인식)
