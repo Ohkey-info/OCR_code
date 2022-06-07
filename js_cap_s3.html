@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Taking photo</title>
+        </head>
+            
+        <style>
+        #my_camera{
+            width: 840px;
+            height: 475px;
+            border: 1px solid black;
+        }
+        </style>
+        <body>
+            <div id="my_camera"></div>
+            <button onclick="addPhoto()" style="width:200px;height:100px;font-size: large;" >찰칵</button>
+
+        </body>
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1145.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+        
+        <div id="results"></div>
+
+        <script type="text/javascript">
+            Webcam.set({
+                width: 840,
+                height: 475,
+                image_format: 'jpeg',
+                jpeg_quality: 90
+            });
+
+            Webcam.attach( '#my_camera' );
+
+            var albumBucketName = "capston-dgu";
+            var bucketRegion = "ap-northeast-2";
+            var IdentityPoolId = "ap-northeast-2:d012a844-a0f8-413d-b791-8169eb27948b";
+
+            AWS.config.update({
+                region: bucketRegion,
+                credentials: new AWS.CognitoIdentityCredentials({
+                    IdentityPoolId: IdentityPoolId
+                })
+            });
+
+            var s3 = new AWS.S3({
+                apiVersion: '2006-03-01',
+                params: { Bucket: albumBucketName }
+            });    
+            
+            function addPhoto() {
+                var a;  
+                var files = Webcam.snap( function(data_uri) {
+                    a = data_uri    //찍은 사진 base 64 data
+                } );
+            
+                //아래는 base64 data를 S3에 올리기 위해 file 객체로 변환하는 코드
+                const dataURLtoFile = (dataurl) => {
+ 
+                    var arr = dataurl.split(','),
+                        mime = arr[0].match(/:(.*?);/)[1],
+                        bstr = atob(arr[1]), 
+                        n = bstr.length, 
+                        u8arr = new Uint8Array(n);
+                        
+                    while(n--){
+                        u8arr[n] = bstr.charCodeAt(n);
+                    }
+                    
+                    return new File([u8arr], 'test1', {type : mime});
+                    }
+                //여기까지base64 data를 S3에 올리기 위해 file 객체로 변환하는 코드
+
+                var image1 = dataURLtoFile(a);  //file 객체로 변환한 이미지
+                
+                let today = new Date();
+                var filename = today.getHours() +'h'+ today.getMinutes() +'m'+ today.getSeconds()+'s' + '.jpeg'     //파일 이름(현재 시간)
+
+                s3.upload({
+                    Bucket : albumBucketName,
+                    Key: filename,
+                    Body: image1,
+                    ContentType: 'image/jpeg'
+                }, function (err, data) {
+                    if (err) {
+                        return alert('There was an error uploading your photo: ', err.message);
+                    }
+                    alert('Successfully uploaded photo.');
+                });
+            }
+        </script>
+    </html>
