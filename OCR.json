@@ -1,0 +1,126 @@
+{
+    "version": "V2",
+    "requestId": "9463c14a-d4d3-41b6-8e6f-7be34affba7a",
+    "timestamp": 1651633887265,
+    "images": [
+        {
+            "uid": "43d4c6c36af84309883f1501747e4c2a",
+            "name": "20220504_121125536911.jpg",
+            "inferResult": "SUCCESS",
+            "message": "SUCCESS",
+            "validationResult": {
+                "result": "NO_REQUESTED"
+            },
+            "fields": [
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 142.0,
+                                "y": 166.0
+                            },
+                            {
+                                "x": 284.0,
+                                "y": 166.0
+                            },
+                            {
+                                "x": 284.0,
+                                "y": 276.0
+                            },
+                            {
+                                "x": 142.0,
+                                "y": 276.0
+                            }
+                        ]
+                    },
+                    "inferText": "김밥",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 313.0,
+                                "y": 173.0
+                            },
+                            {
+                                "x": 533.0,
+                                "y": 176.0
+                            },
+                            {
+                                "x": 532.0,
+                                "y": 258.0
+                            },
+                            {
+                                "x": 312.0,
+                                "y": 256.0
+                            }
+                        ]
+                    },
+                    "inferText": "먹고싶다",
+                    "inferConfidence": 0.9997,
+                    "type": "NORMAL",
+                    "lineBreak": true
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 162.0,
+                                "y": 325.0
+                            },
+                            {
+                                "x": 405.0,
+                                "y": 325.0
+                            },
+                            {
+                                "x": 405.0,
+                                "y": 440.0
+                            },
+                            {
+                                "x": 162.0,
+                                "y": 440.0
+                            }
+                        ]
+                    },
+                    "inferText": "컵라면",
+                    "inferConfidence": 0.9017,
+                    "type": "NORMAL",
+                    "lineBreak": false
+                },
+                {
+                    "valueType": "ALL",
+                    "boundingPoly": {
+                        "vertices": [
+                            {
+                                "x": 414.0,
+                                "y": 330.0
+                            },
+                            {
+                                "x": 534.0,
+                                "y": 330.0
+                            },
+                            {
+                                "x": 534.0,
+                                "y": 408.0
+                            },
+                            {
+                                "x": 414.0,
+                                "y": 408.0
+                            }
+                        ]
+                    },
+                    "inferText": "1개",
+                    "inferConfidence": 1.0,
+                    "type": "NORMAL",
+                    "lineBreak": true
+                }
+            ]
+        }
+    ]
+}
