@@ -9,8 +9,8 @@ import json
 
 #S3 업로드 코드
 s3 = boto3.client('s3',
-    aws_access_key_id = "AKIAXD4YJDWSS7UNX6VJ",
-    aws_secret_access_key = "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")
+    aws_access_key_id = "aws_access_key_id",
+    aws_secret_access_key = "aws_secret_access_key")
 bucket_name = 'capston-dgu'
 #end
 
