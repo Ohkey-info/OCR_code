@@ -16,7 +16,7 @@ bucket_name = 'capston-dgu'
 
 #CLOVA OCR
 api_url = 'https://1mte94hdpr.apigw.ntruss.com/custom/v1/15641/df7e3d874c4ebcd0839255e7bb5ecec3d3dc754994d59c437e615e4934d6fdcd/general'
-secret_key = 'UXdxaFVvdVRrSWRVQnRtUFhZVWZpUWZObGxnb05lcHA='
+secret_key = 'secret_key='
 #end
 
 output_file = 'OCR.json'
